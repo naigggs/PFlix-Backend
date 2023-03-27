@@ -135,6 +135,9 @@ def editProduct(request, pk):
     product.video = data['video']
     product.description = data['description']
 
+    director1 = Director.objects.get(_id=data['director'])
+    director = director1,
+    
     genre_id = data['genre']
     genre = get_object_or_404(Genre, _id=genre_id)
     product.genre = genre
