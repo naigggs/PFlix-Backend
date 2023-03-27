@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-1by#rsmux7+&ptzc(ku(nc8826%4*_^8t^)qgsykuh#jy$=d5u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework_simplejwt',
     'storages',
+    'example',
 ]
 
 AUTH_USER_MODEL = 'accounts.User'
